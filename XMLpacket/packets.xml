@@ -1,154 +1,170 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <Packets>
-<Packet timestamp="1761675349914" frame_number="2">
+<Packet timestamp="1761685606744" framenumber="2">
   <Ethernet type="2048">
     <SourceMAC>50:28:4A:13:9B:29</SourceMAC>
     <DestinationMAC>88:3C:1C:3B:9F:42</DestinationMAC>
   </Ethernet>
-  <Ip ttl="128" length="60">
+  <NetworkLayer protocol="IP" ttl="128" length="41">
     <SourceIp>172.30.1.87</SourceIp>
-    <DestinationIp>168.126.63.1</DestinationIp>
-  </Ip>
+    <DestinationIp>34.110.164.207</DestinationIp>
+  </NetworkLayer>
+  <TransportLayer protocol="TCP" sequencenum="2604042348" acknowledgementnum="2578842044" flags="16" checksum="29902">
+    <SourcePort>53240</SourcePort>
+    <DestinationPort>443</DestinationPort>
+  </TransportLayer>
 </Packet>
-<Packet timestamp="1761675349915" frame_number="4">
-  <Ethernet type="2048">
-    <SourceMAC>50:28:4A:13:9B:29</SourceMAC>
-    <DestinationMAC>88:3C:1C:3B:9F:42</DestinationMAC>
-  </Ethernet>
-  <Ip ttl="128" length="60">
-    <SourceIp>172.30.1.87</SourceIp>
-    <DestinationIp>168.126.63.1</DestinationIp>
-  </Ip>
-</Packet>
-<Packet timestamp="1761675349917" frame_number="6">
+<Packet timestamp="1761685606749" framenumber="4">
   <Ethernet type="2048">
     <SourceMAC>88:3C:1C:3B:9F:42</SourceMAC>
     <DestinationMAC>50:28:4A:13:9B:29</DestinationMAC>
   </Ethernet>
-  <Ip ttl="58" length="129">
-    <SourceIp>168.126.63.1</SourceIp>
+  <NetworkLayer protocol="IP" ttl="120" length="52">
+    <SourceIp>34.110.164.207</SourceIp>
     <DestinationIp>172.30.1.87</DestinationIp>
-  </Ip>
+  </NetworkLayer>
+  <TransportLayer protocol="TCP" sequencenum="2578842044" acknowledgementnum="2604042349" flags="16" checksum="10467">
+    <SourcePort>443</SourcePort>
+    <DestinationPort>53240</DestinationPort>
+  </TransportLayer>
 </Packet>
-<Packet timestamp="1761675349920" frame_number="8">
+<Packet timestamp="1761685606777" framenumber="6">
+  <Ethernet type="2048">
+    <SourceMAC>50:28:4A:13:9B:29</SourceMAC>
+    <DestinationMAC>01:00:5E:00:00:FB</DestinationMAC>
+  </Ethernet>
+  <NetworkLayer protocol="IP" ttl="1" length="71">
+    <SourceIp>172.30.1.87</SourceIp>
+    <DestinationIp>224.0.0.251</DestinationIp>
+  </NetworkLayer>
+  <Payload length="43">
+    <Data>0000: 00 00 00 00  00 01 00 00  00 00 00 00  07 7a 7a 7a    .............zzz
+0010: 7a 7a 35 35  06 5f 64 6f  73 76 63 04  5f 74 63 70    zz55._dosvc._tcp
+0020: 05 6c 6f 63  61 6c 00 00  ff 00 01                    .local.....     
+</Data>
+  </Payload>
+</Packet>
+<Packet timestamp="1761685606780" framenumber="8">
+  <Ethernet type="34525">
+    <SourceMAC>50:28:4A:13:9B:29</SourceMAC>
+    <DestinationMAC>33:33:00:00:00:FB</DestinationMAC>
+  </Ethernet>
+  <Payload length="43">
+    <Data>0000: 00 00 00 00  00 01 00 00  00 00 00 00  07 7a 7a 7a    .............zzz
+0010: 7a 7a 35 35  06 5f 64 6f  73 76 63 04  5f 74 63 70    zz55._dosvc._tcp
+0020: 05 6c 6f 63  61 6c 00 00  ff 00 01                    .local.....     
+</Data>
+  </Payload>
+</Packet>
+<Packet timestamp="1761685606840" framenumber="10">
+  <Ethernet type="2048">
+    <SourceMAC>50:28:4A:13:9B:29</SourceMAC>
+    <DestinationMAC>88:3C:1C:3B:9F:42</DestinationMAC>
+  </Ethernet>
+  <NetworkLayer protocol="IP" ttl="128" length="57">
+    <SourceIp>172.30.1.87</SourceIp>
+    <DestinationIp>142.250.76.42</DestinationIp>
+  </NetworkLayer>
+</Packet>
+<Packet timestamp="1761685606874" framenumber="12">
   <Ethernet type="2048">
     <SourceMAC>88:3C:1C:3B:9F:42</SourceMAC>
     <DestinationMAC>50:28:4A:13:9B:29</DestinationMAC>
   </Ethernet>
-  <Ip ttl="58" length="76">
-    <SourceIp>168.126.63.1</SourceIp>
+  <NetworkLayer protocol="IP" ttl="58" length="351">
+    <SourceIp>142.250.76.42</SourceIp>
     <DestinationIp>172.30.1.87</DestinationIp>
-  </Ip>
+  </NetworkLayer>
 </Packet>
-<Packet timestamp="1761675349922" frame_number="10">
-  <Ethernet type="2048">
-    <SourceMAC>50:28:4A:13:9B:29</SourceMAC>
-    <DestinationMAC>88:3C:1C:3B:9F:42</DestinationMAC>
-  </Ethernet>
-  <Ip ttl="128" length="1278">
-    <SourceIp>172.30.1.87</SourceIp>
-    <DestinationIp>142.250.206.228</DestinationIp>
-  </Ip>
-</Packet>
-<Packet timestamp="1761675349922" frame_number="12">
-  <Ethernet type="2048">
-    <SourceMAC>50:28:4A:13:9B:29</SourceMAC>
-    <DestinationMAC>88:3C:1C:3B:9F:42</DestinationMAC>
-  </Ethernet>
-  <Ip ttl="128" length="1278">
-    <SourceIp>172.30.1.87</SourceIp>
-    <DestinationIp>142.250.206.228</DestinationIp>
-  </Ip>
-</Packet>
-<Packet timestamp="1761675349923" frame_number="14">
-  <Ethernet type="2048">
-    <SourceMAC>50:28:4A:13:9B:29</SourceMAC>
-    <DestinationMAC>88:3C:1C:3B:9F:42</DestinationMAC>
-  </Ethernet>
-  <Ip ttl="128" length="110">
-    <SourceIp>172.30.1.87</SourceIp>
-    <DestinationIp>142.250.206.228</DestinationIp>
-  </Ip>
-</Packet>
-<Packet timestamp="1761675349923" frame_number="16">
-  <Ethernet type="2048">
-    <SourceMAC>50:28:4A:13:9B:29</SourceMAC>
-    <DestinationMAC>88:3C:1C:3B:9F:42</DestinationMAC>
-  </Ethernet>
-  <Ip ttl="128" length="1274">
-    <SourceIp>172.30.1.87</SourceIp>
-    <DestinationIp>142.250.206.228</DestinationIp>
-  </Ip>
-</Packet>
-<Packet timestamp="1761675349923" frame_number="18">
-  <Ethernet type="2048">
-    <SourceMAC>50:28:4A:13:9B:29</SourceMAC>
-    <DestinationMAC>88:3C:1C:3B:9F:42</DestinationMAC>
-  </Ethernet>
-  <Ip ttl="128" length="607">
-    <SourceIp>172.30.1.87</SourceIp>
-    <DestinationIp>142.250.206.228</DestinationIp>
-  </Ip>
-</Packet>
-<Packet timestamp="1761675349957" frame_number="20">
+<Packet timestamp="1761685606874" framenumber="14">
   <Ethernet type="2048">
     <SourceMAC>88:3C:1C:3B:9F:42</SourceMAC>
     <DestinationMAC>50:28:4A:13:9B:29</DestinationMAC>
   </Ethernet>
-  <Ip ttl="58" length="68">
-    <SourceIp>142.250.206.228</SourceIp>
+  <NetworkLayer protocol="IP" ttl="58" length="49">
+    <SourceIp>142.250.76.42</SourceIp>
     <DestinationIp>172.30.1.87</DestinationIp>
-  </Ip>
+  </NetworkLayer>
 </Packet>
-<Packet timestamp="1761675349957" frame_number="22">
-  <Ethernet type="2048">
-    <SourceMAC>88:3C:1C:3B:9F:42</SourceMAC>
-    <DestinationMAC>50:28:4A:13:9B:29</DestinationMAC>
-  </Ethernet>
-  <Ip ttl="58" length="1278">
-    <SourceIp>142.250.206.228</SourceIp>
-    <DestinationIp>172.30.1.87</DestinationIp>
-  </Ip>
-</Packet>
-<Packet timestamp="1761675349972" frame_number="24">
+<Packet timestamp="1761685606875" framenumber="16">
   <Ethernet type="2048">
     <SourceMAC>50:28:4A:13:9B:29</SourceMAC>
     <DestinationMAC>88:3C:1C:3B:9F:42</DestinationMAC>
   </Ethernet>
-  <Ip ttl="128" length="341">
+  <NetworkLayer protocol="IP" ttl="128" length="63">
     <SourceIp>172.30.1.87</SourceIp>
-    <DestinationIp>142.250.206.228</DestinationIp>
-  </Ip>
+    <DestinationIp>142.250.76.42</DestinationIp>
+  </NetworkLayer>
 </Packet>
-<Packet timestamp="1761675349984" frame_number="26">
+<Packet timestamp="1761685606878" framenumber="18">
   <Ethernet type="2048">
     <SourceMAC>50:28:4A:13:9B:29</SourceMAC>
     <DestinationMAC>88:3C:1C:3B:9F:42</DestinationMAC>
   </Ethernet>
-  <Ip ttl="128" length="146">
+  <NetworkLayer protocol="IP" ttl="128" length="1278">
     <SourceIp>172.30.1.87</SourceIp>
-    <DestinationIp>142.250.206.228</DestinationIp>
-  </Ip>
+    <DestinationIp>142.250.76.42</DestinationIp>
+  </NetworkLayer>
 </Packet>
-<Packet timestamp="1761675349992" frame_number="28">
+<Packet timestamp="1761685606878" framenumber="20">
+  <Ethernet type="2048">
+    <SourceMAC>50:28:4A:13:9B:29</SourceMAC>
+    <DestinationMAC>88:3C:1C:3B:9F:42</DestinationMAC>
+  </Ethernet>
+  <NetworkLayer protocol="IP" ttl="128" length="1278">
+    <SourceIp>172.30.1.87</SourceIp>
+    <DestinationIp>142.250.76.42</DestinationIp>
+  </NetworkLayer>
+</Packet>
+<Packet timestamp="1761685606878" framenumber="22">
+  <Ethernet type="2048">
+    <SourceMAC>50:28:4A:13:9B:29</SourceMAC>
+    <DestinationMAC>88:3C:1C:3B:9F:42</DestinationMAC>
+  </Ethernet>
+  <NetworkLayer protocol="IP" ttl="128" length="105">
+    <SourceIp>172.30.1.87</SourceIp>
+    <DestinationIp>142.250.76.42</DestinationIp>
+  </NetworkLayer>
+</Packet>
+<Packet timestamp="1761685606899" framenumber="24">
   <Ethernet type="2048">
     <SourceMAC>88:3C:1C:3B:9F:42</SourceMAC>
     <DestinationMAC>50:28:4A:13:9B:29</DestinationMAC>
   </Ethernet>
-  <Ip ttl="58" length="1278">
-    <SourceIp>142.250.206.228</SourceIp>
+  <NetworkLayer protocol="IP" ttl="58" length="52">
+    <SourceIp>142.250.76.42</SourceIp>
     <DestinationIp>172.30.1.87</DestinationIp>
-  </Ip>
+  </NetworkLayer>
 </Packet>
-<Packet timestamp="1761675349992" frame_number="30">
+<Packet timestamp="1761685606919" framenumber="26">
   <Ethernet type="2048">
     <SourceMAC>88:3C:1C:3B:9F:42</SourceMAC>
     <DestinationMAC>50:28:4A:13:9B:29</DestinationMAC>
   </Ethernet>
-  <Ip ttl="58" length="434">
-    <SourceIp>142.250.206.228</SourceIp>
+  <NetworkLayer protocol="IP" ttl="57" length="68">
+    <SourceIp>142.250.76.42</SourceIp>
     <DestinationIp>172.30.1.87</DestinationIp>
-  </Ip>
+  </NetworkLayer>
+</Packet>
+<Packet timestamp="1761685606920" framenumber="28">
+  <Ethernet type="2048">
+    <SourceMAC>88:3C:1C:3B:9F:42</SourceMAC>
+    <DestinationMAC>50:28:4A:13:9B:29</DestinationMAC>
+  </Ethernet>
+  <NetworkLayer protocol="IP" ttl="57" length="1278">
+    <SourceIp>142.250.76.42</SourceIp>
+    <DestinationIp>172.30.1.87</DestinationIp>
+  </NetworkLayer>
+</Packet>
+<Packet timestamp="1761685606936" framenumber="30">
+  <Ethernet type="2048">
+    <SourceMAC>88:3C:1C:3B:9F:42</SourceMAC>
+    <DestinationMAC>50:28:4A:13:9B:29</DestinationMAC>
+  </Ethernet>
+  <NetworkLayer protocol="IP" ttl="58" length="52">
+    <SourceIp>142.250.76.42</SourceIp>
+    <DestinationIp>172.30.1.87</DestinationIp>
+  </NetworkLayer>
 </Packet>
 </Packets>

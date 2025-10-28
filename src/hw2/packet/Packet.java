@@ -32,7 +32,7 @@ public class Packet {
 	
 	public String toXMLString() {
 	    StringBuilder sb = new StringBuilder();
-	    sb.append("<Packet timestamp=\"").append(timestamp).append("\" frame_number=\"").append(frame_number).append("\">\n");
+	    sb.append("<Packet timestamp=\"").append(timestamp).append("\" framenumber=\"").append(frame_number).append("\">\n");
 
 	    if (eth != null) {
 	        sb.append("  <Ethernet type=\"").append(eth.type()).append("\">\n");
@@ -42,15 +42,15 @@ public class Packet {
 	    }
 
 	    if (ip != null) {
-	        sb.append("  <Ip ttl=\"").append(ip.ttl()).append("\" length=\"").append(ip.length()).append("\">\n");
+	        sb.append("  <NetworkLayer protocol=\"IP\" ttl=\"").append(ip.ttl()).append("\" length=\"").append(ip.length()).append("\">\n");
 	        sb.append("    <SourceIp>").append(ip.sourceip()).append("</SourceIp>\n");
 	        sb.append("    <DestinationIp>").append(ip.destinationip()).append("</DestinationIp>\n");
-	        sb.append("  </Ip>\n");
+	        sb.append("  </NetworkLayer>\n");
 	    }
 
 	    if (transport != null) {
-	        sb.append("  <TransportLayer sequenceNum=\"").append(transport.sequenceNum())
-	          .append("\" acknowledgementNum=\"").append(transport.acknowledgementNum())
+	        sb.append("  <TransportLayer protocol=\"TCP\" sequencenum=\"").append(transport.sequenceNum())
+	          .append("\" acknowledgementnum=\"").append(transport.acknowledgementNum())
 	          .append("\" flags=\"").append(transport.flags())
 	          .append("\" checksum=\"").append(transport.checksum())
 	          .append("\">\n");

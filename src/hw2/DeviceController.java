@@ -121,7 +121,7 @@ public class DeviceController {
 			PcapPacket packet = new PcapPacket(header, buf);
 			packet.scan(id);
 			packetList.add(parsePacket(packet, id));
-			num++;
+            num++;
 		}
 		pcap.close();
 		return packetList;
